@@ -1,3 +1,7 @@
+// cypress.env.json file should not be pushed when actual environment variable are present
+// add an Env variable in cypress.json in an 'env' object (or) cypress.env.json (or) pass in "npx cypress open --env var_name=var_val" command 
+// alert(Cypress.env('MY_ENV_VARIABLE'));
+
 describe('Basic page interactions', () => {
     beforeEach(() => {
         cy.visit('/example-4');
