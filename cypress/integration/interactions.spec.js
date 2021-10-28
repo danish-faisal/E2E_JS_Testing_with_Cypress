@@ -1,3 +1,9 @@
+// To activate code completion - add the below line | needs to be included in each file we want auto-completion
+/// <reference types="cypress" />
+
+// for having auto-completion globally -> include cypress in jsconfig.json file
+// Not working ATM -> Problem: https://stackoverflow.com/questions/69387234/node-modules-cypress-types-not-found
+
 // cypress.env.json file should not be pushed when actual environment variable are present
 // add an Env variable in cypress.json in an 'env' object (or) cypress.env.json (or) pass in "npx cypress open --env var_name=var_val" command 
 // alert(Cypress.env('MY_ENV_VARIABLE'));
