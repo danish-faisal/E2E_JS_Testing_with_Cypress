@@ -22,9 +22,12 @@ describe('Basic page interactions', () => {
     });
 
     it('should display the name of the most recently hovered item', () => {
-        cy.get('[data-cy=box-4-items-list] > :nth-child(2)').trigger('mouseover');
+        cy.get('[data-cy=box-4-items-list] > :nth-child(2)').trigger('mouseover')
+        // .debug(); (or)
+        // .then(() => {
+        //     debugger;
+        // }); and open the console so that tests are paused
 
         cy.get('[data-cy=box-4-selected-name]').invoke('text').should('equal', 'Option Two');
-
     })
 });
