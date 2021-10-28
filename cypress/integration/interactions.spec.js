@@ -36,4 +36,7 @@ describe('Basic page interactions', () => {
     });
 
     // '.and': to chain assertions .should(...).and(...), for readability; but can also chain .should(...).should(...)
+
+    // Typing Special Characters: (like Enter, Tab, Esc,...) -> .type({enter}) | .type('This is a text {enter}')
+    // https://docs.cypress.io/api/commands/type#Arguments
 });
