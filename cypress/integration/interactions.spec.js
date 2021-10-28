@@ -30,8 +30,10 @@ describe('Basic page interactions', () => {
         // .debug(); (or)
         // .then(() => {
         //     debugger;
-        // }); and open the console so that tests are paused
+        // }); // and open the console so that tests are paused
 
         cy.get('[data-cy=box-4-selected-name]').invoke('text').should('equal', 'Option Two');
-    })
+    });
+
+    // '.and': to chain assertions .should(...).and(...), for readability; but can also chain .should(...).should(...)
 });
